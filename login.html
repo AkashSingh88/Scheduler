@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login | MyScheduler</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <!--Awesome fonts-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.js"></script>
+        <script type="text/javascript">
+                $(document).ready(function(){
+                    $('[data-toggle="tooltip"]').tooltip();
+                });
+                
+                
+            function getConfirm(){
+               var retVal = confirm("Do you want to Save your Info ?");
+               if( retVal == true ){
+                  alert("Successfully Saved!");
+                  return true;
+               }
+               else{
+                  alert("Login Aborted");
+                  return false;
+               }
+            }
+         
+        </script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+         <!--HEADER-->
+        <div class="container-fluid top_bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+                <a href="#" data-toggle="tooltip" data-placement="left" title="Facebook" class="social_icons"><i class="fa fa-facebook" style="font-size: 30px; color: #fff;"></i></a>
+                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter" class="social_icons"><i class="fa fa-twitter-square" style="font-size: 30px; color: #fff;"></i></a>
+                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Youtube" class="social_icons"><i class="fa fa-youtube-play" style="font-size: 30px; color: #fff;"></i></a>
+                <a href="#" data-toggle="tooltip" data-placement="right" title="Google+" class="social_icons"><i class="fa fa-google-plus" style="font-size: 30px; color: #fff;"></i></a>
+                   </div>             
+                <div class="col-sm-9 text-right contact_info" style="border: 1px ;">
+                    <span class="glyphicon glyphicon-envelope"></span> akash91162@gmail.com &nbsp; &nbsp;
+                 <span class="glyphicon glyphicon-earphone"></span> +91 9877921268
+                </div>
+            </div><!--end of row-->
+            </div><!-- end of container-->
+            </div><!--end of fluid-->
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4 my_log">
+                        <nav class="navbar navbar-default">
+                     <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                         </button>
+                                
+                            </div><!-- end of navbar header-->
+                        <div class="collapse navbar-collapse text-center" id="myNavbar">
+                        <ul class="nav navbar-nav pull-right">
+                            <li><a href="home page adv.html">Home</a></li>
+                            <li><a href="register.html">Not yet Registered?</a></li>
+                            
+                        </ul>
+                         </div><!--end of collapse-->   
+                            </nav>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+                
+            </div>
+            
+       
+            
+            <div class="container-fluid bg-img img-responsive">
+             
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <form class="form-container" action="home page adv.html">
+                        <center>
+                        <h1>Login with</h1>    
+                <a href="#" data-toggle="tooltip" data-placement="left" title="Facebook"><span class="login_icons"><i class="fa fa-facebook" style="font-size:30px;  width: 70px; height: 70px; line-height:80px; background: #fff; border-radius: 40px; color:#005998;"></i></span></a>
+             &nbsp;   <a href="#" data-toggle="tooltip" data-placement="right" title="Google+"><span class="login_icons"><i class="fa fa-google-plus" style="font-size:30px; width: 70px; height: 70px; line-height:80px; background: #fff; border-radius: 40px; color:red;"></i></span></a>
+ 
+                            <h2>OR</h2><hr>
+                        </center>
+                       
+                        <div class="form-group">
+                            <label for="email"><h3>Email</h3></label>
+                             <input type="email" required class="form-control"  placeholder="Email@gmail.com" name="e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><h3>Password</h3> </label>
+                             <input type="password" required class="form-control" placeholder="Password" name="password" required>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">Save Password?
+                            </label>
+                        </div>
+                                    <button type="submit" name="submit" onclick="getConfirm()" class="btn btn-primary btn-block" style = "color: white">Login </button><br><br>
+                                
+                    </form>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 reg-btn"></div>
+                
+            </div>
+        </div>
+            
+           <!--end of form-->
+           
+           
+        <!--footer-->
+        <div class="container-fluid footer">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-sm-4">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li class="active"><a href="home page adv.html" >Home</a></li>
+                            <li><a href="home page adv.html#about">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            
+                        </ul>
+                    </div><!--end of col 2-->
+                    
+                    <div class=" col-sm-4">
+                        <h3>Contact Details</h3>
+                        <p><strong>E-mail :</strong>akash91162@gmail.com</p>
+                        <p><strong>Phone :</strong>+91 9877921268 </p>
+                    </div><!--end of col 2-->
+                </div>
+            </div>
+        </div>
+        <!--end of footer-->
+
+    </body>
+</html>
